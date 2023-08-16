@@ -2,12 +2,52 @@
     .container {
         max-width: 428px;
     }
-}
+
+    .hero {
+        max-width: 428px;
+    }
+
+    .about-list {
+        width: 396px;
+        align-items: center;
+        }
+
+    .about-top-text {
+        width: 396px;
+    }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
         }
+
+    .hero {
+        max-width: 768px;
+        background-image: var(--grad-hero), url(../images/Dark-bg-tab.jpg);
+        }
+        
+    .about-list {
+        width: 736px; 
+        }
+
+    .about-item {
+        width: calc((100% - 24px) / 2);
+    }   
+    
+    .about-title {
+        width: 264px;
+        height: 40px;
+        align-items: start;
+    }
+        
+    .about-top-text {
+        width: 356px;
+        height: 72px;
+        }
+
+    .customers-item {
+        gap: 72px 24px;
+    }
 }
 
 @media screen and (min-width: 1158px) {

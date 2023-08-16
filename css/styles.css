@@ -47,13 +47,15 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
     width: 100%;
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
 }
 
@@ -190,28 +192,30 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: 1440px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 1158px;
 }
 
 .hero-title {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
-    max-width: 496px;
+    width: 320px;
     flex-direction: column;
     flex-shrink: 0;
+    text-transform: capitalize;
 }
 
 .hero-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 48px;
+    gap: 72px;
 }
 
 .btn {
@@ -245,20 +249,22 @@ img {
 
 .about {
     background-color: #FFFFFF;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .about-list {
+    width: 288px;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px; 
 }
 
 .about-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2E2F42;
     display: flex;
@@ -268,16 +274,15 @@ img {
 }
 
 .about-top-text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--body-color);
     display: flex;
-    width: 264px;
+    width: 288px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
 }
 
 .about-icon {
@@ -291,10 +296,13 @@ img {
     display: none;
 }
 
+/* --------Image------- */
+
 .image-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .image {
@@ -302,6 +310,7 @@ img {
     padding-top: 0;
     padding-bottom: 120px;
     display: flex;
+    display: none;
 }
 
 .image-title {
@@ -330,8 +339,8 @@ img {
 
 .team {
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .team-container {
@@ -342,7 +351,9 @@ img {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
 }
 
 .team-comand {
@@ -444,17 +455,18 @@ img {
 
 .customers-item {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 16px;
+    justify-content: center;
 }
 
 .customers-list {
-    width: calc((100% - 120px) / 6);
     height: 88px;
 }
 
 .customers-link {
-    width: 100%;
-    height: 100%;
+    width: 190px;
+    height: 88px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     display: flex;
