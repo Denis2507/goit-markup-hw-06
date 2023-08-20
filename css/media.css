@@ -21,7 +21,10 @@
     .about-top-text {
         width: 396px;
     }
-}
+    
+    .footer-form-input {
+        width: 398px;
+    }
 
 @media screen and (min-width: 768px) {
     .container {
@@ -29,7 +32,6 @@
         }
 
     .header {
-        width: 768px;
         height: 72px;
         display: flex;
     }
@@ -56,13 +58,16 @@
         display: flex;
     }
 
-    .header-cont {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        margin-bottom: 12px;
+    .header-item {
+        
     }
 
     .header-list-cont {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .burger-menu {
@@ -94,8 +99,63 @@
         height: 72px;
         }
 
+    .team-list {
+        gap: 72px 24px;
+    }
+
+    .customers-link {
+        width: 168px;
+    }
+
     .customers-item {
         gap: 72px 24px;
+    }
+
+    .footer {
+        padding-top: 97px;
+        padding-bottom: 96px;
+    }
+
+    .footer-logo {
+        width: 115px;
+        height: 21px;
+        margin-left: 93px;
+    }
+
+    .footer-footer {
+        width: 768px;
+        gap: 72px 24px;
+    }
+
+    .footer-text {
+        margin-left: 93px;
+    }
+    
+    .footer-media {
+        justify-content: flex-start;
+    }
+
+    .footer-soc-list {
+        justify-content: flex-start;
+    }
+
+    .footer-form-text {
+        width: 75px;
+        height: 24px;
+        margin-left: 93px;
+    }
+
+    .footer-form-form {
+        gap: 24px;
+    }
+
+    .footer-form-input {
+        margin-left: 93px;
+        width: 264px;
+    }
+
+    .footer-form-btn {
+        margin-left: 93px;
     }
 }
 
@@ -105,12 +165,12 @@
     }
 
     .hero {
-        max-width: 1158px;
+        max-width: 1440px;
+        padding: 188px 0;
         background-image: var(--grad-hero), url(../images/hero-bg.jpg);
     }
 
     .header {
-        width: 1158px;
         height: 72px;
         display: flex;
     }
@@ -121,6 +181,7 @@
 
     .header-list-cont {
         display: flex;
+        flex-direction: row;
         gap: 40px;
     }
 
@@ -142,6 +203,14 @@
         width: 1158px;
         gap: 24px;
         display: flex;
+    }
+
+    .about-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+        height: 24px;
     }
 
     .about-item {
@@ -178,5 +247,15 @@
 
     .customers-link {
         width: 168px;
+    }
+
+    .footer-footer {
+        width: 1158px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .footer-soc {
+        margin-right: 120px;
     }
 }
