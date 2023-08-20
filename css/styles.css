@@ -54,8 +54,8 @@ img {
 .container {
     width: 100%;
     max-width: 1158px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
 
@@ -81,8 +81,6 @@ img {
 
 .header-container {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .header-logo-studio {
@@ -99,7 +97,7 @@ img {
 
 .header-nav {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .header-contacts {
@@ -110,6 +108,7 @@ img {
 .header-list {
     display: flex;
     gap: 40px;
+    display: none;
 }
 
 .header {
@@ -161,12 +160,13 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
-    font-style: normal
+    font-style: normal;
+    display: none;
 }
 
 .header-cont {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--body-color);
@@ -181,6 +181,13 @@ img {
 
 .header-cont:focus {
     color: #404bbf;
+}
+
+.burger-menu {
+}
+
+.icon-burger {
+    color: #2E2F42;
 }
 
 
@@ -495,12 +502,13 @@ img {
 
 .footer-container {
     flex-direction: column;
-    margin-right: 120px;
 }
 
 .footer-footer {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 72px;
+    width: 320px;
 }
 
 .footer {
@@ -518,7 +526,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     margin-bottom: 16px;
 }
 
@@ -541,7 +550,7 @@ img {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     display: flex;
-    width: 264px;
+    width: 268px;
     flex-direction: column;
     flex-shrink: 0;
 }
@@ -557,10 +566,14 @@ img {
     letter-spacing: 0.02em;
     color: var(--color-white);
     margin-bottom: 16px;
+    width: 288px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-soc-list {
     display: flex;
+    justify-content: center;
     gap: 16px;
 }
 
@@ -599,11 +612,15 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    width: 288px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-form-form {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .footer-form-label {

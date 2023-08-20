@@ -3,6 +3,9 @@
         max-width: 428px;
     }
 
+    .header {
+    }
+
     .hero {
         max-width: 428px;
     }
@@ -11,23 +14,69 @@
         width: 396px;
         align-items: center;
         }
+    .about-title {
+        width: 396px;
+    }
 
     .about-top-text {
         width: 396px;
     }
+}
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
         }
 
+    .header {
+        width: 768px;
+        height: 72px;
+        display: flex;
+    }
+
+    .header-logo {
+        margin-right: 120px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header-nav {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-list {
+        display: flex;
+    }
+
+    .header-addres {
+        display: flex;
+    }
+
+    .header-cont {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 12px;
+    }
+
+    .header-list-cont {
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
     .hero {
         max-width: 768px;
         background-image: var(--grad-hero), url(../images/Dark-bg-tab.jpg);
         }
         
-    .about-list {
-        width: 736px; 
+    .about-list { 
+        width: 736px;
+        gap: 72px 24px;
         }
 
     .about-item {
@@ -53,5 +102,81 @@
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
-        }
+    }
+
+    .hero {
+        max-width: 1158px;
+        background-image: var(--grad-hero), url(../images/hero-bg.jpg);
+    }
+
+    .header {
+        width: 1158px;
+        height: 72px;
+        display: flex;
+    }
+
+    .header-logo {
+        margin-right: 76px;
+    }
+
+    .header-list-cont {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-cont {
+        font-size: 16px;
+    }
+    
+    .hero-title {
+        font-size: 56px;
+        width: 496px;
+    }
+
+    .about {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .about-list {
+        width: 1158px;
+        gap: 24px;
+        display: flex;
+    }
+
+    .about-item {
+        width: 264px;
+        height: 240px;
+    }
+    
+    .about-icon {
+        display: flex;
+        width: 264px;
+    }
+
+    .about-top-text {
+        width: 264px;
+        font-weight: 400;
+    }
+
+    .image {
+        display: block;
+    }
+
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .customers-item {
+        display: flex;
+    }
+
+    .customers-link {
+        width: 168px;
+    }
 }
